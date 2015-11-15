@@ -36,7 +36,7 @@ if (version_compare(PHP_VERSION, '5.1.0', '>=')) {//PHP5.1.0以上の場合の�
 $site_top = "http://daishihamada.com/index.html";
 
 // 管理者メールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
-$to = "wingerzjp1979@gmail.com";
+$to = "daishi_h_j@hotmail.com";
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "Mail";
@@ -221,7 +221,7 @@ else if($confirmDsp == 1){
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-<link rel="stylesheet" type="text/css" href="./css/fullback.css">
+<link rel="stylesheet" type="text/css" href="./css/new_fullback.css">
 <title>確認画面</title>
 
 </head>
@@ -269,7 +269,7 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-<link rel="stylesheet" type="text/css" href="./css/fullback.css">
+<link rel="stylesheet" type="text/css" href="./css/new_fullback.css">
 <title>完了画面</title>
 </head>
 <body>
