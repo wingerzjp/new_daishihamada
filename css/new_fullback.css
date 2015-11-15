@@ -1,0 +1,1141 @@
+/* ========================================
+ RESET CSS
+=========================================== */
+/*
+html5doctor.com Reset Stylesheet
+v1.4
+2009-07-27
+Author: Richard Clark - http://richclarkdesign.com
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+     margin:0;
+     padding:0;
+     border:0;
+     outline:0;
+     font-size:100%;
+     vertical-align:baseline;
+     background:transparent;
+}
+body {
+     line-height:1;
+}
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+     display:block;
+}
+
+ul {
+     list-style:none;
+}
+
+blockquote, q {
+     quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+     content:'';
+     content:none;
+}
+
+a {
+     margin:0;
+     padding:0;
+     border:0;
+     font-size:100%;
+     vertical-align:baseline;
+     background:transparent;
+}
+
+ins {
+     background-color:#ff9;
+     color:#000;
+     text-decoration:none;
+}
+
+mark {
+     background-color:#ff9;
+     color:#000;
+     font-style:italic;
+     font-weight:bold;
+}
+
+del {
+     text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+     border-bottom:1px dotted #000;
+     cursor:help;
+}
+
+table {
+     border-collapse:collapse;
+     border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+     vertical-align:middle;
+}
+
+
+/* ========================================
+ 基本 CSS
+=========================================== */
+
+@font-face {
+  font-family: 'ipaexm';
+  /*src: url(hannari.eot);*/
+  src: url(ipaexm.woff) format('woff');
+}
+
+body{
+	font-family: 'ipaexm';
+	line-height: 115%;
+	
+}
+
+img{
+	border-style:none;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+#wrapper{
+	width: 100%;
+	
+	overflow: hidden;
+}
+
+
+#sb-site{
+	width: 100%;
+	display:table;
+	overflow: hidden;
+	background-color: rgba(255,255,255,1);/*メニューの残像消すために白バックにしている*/
+	
+}
+
+
+#side{
+	width:220px;
+	height: 100%;
+	display: table-cell;
+	table-layout: fixed;
+	vertical-align: top;
+
+
+}
+
+#contens{
+	width: 85%;
+	height: 100%;
+	display: table-cell;
+	padding-top:100px;
+	margin: auto;
+	overflow: hidden;
+	
+}
+
+
+/*スマホメニュー設定*/
+
+#m_nav{
+	position: fixed;
+	background: #ffffff;
+	width: 100%;
+	height:75px;
+	z-index: 1307;
+	border-bottom: 1px solid #d3d3d3;
+    -webkit-box-shadow: 0 1px 0 #f5f5f5;
+    -moz-box-shadow: 0 1px 0 #f5f5f5;
+    box-shadow: 0 1px 0 #f5f5f5;
+    overflow: hidden;
+}
+
+.sb-toggle-left{
+	float: left;
+	padding: 20px 10px 20px 10px;
+}
+
+.sb-toggle-left img{
+	width: 25px;
+	height: 25px;
+}
+
+.nav_logo{
+	width: 130px;
+	margin: auto;
+	padding-top: 5px;
+}
+
+.nav_logo img{
+	width: 130px;
+	height:auto;
+}
+
+.sb-menu li{
+	margin-top: 20px;
+	height: 30px;
+	text-align: center;
+	color:#000000;
+	vertical-align: middle;
+	list-style-type: none;
+	font-family: Anton;
+	font-size: 20px;
+}
+
+.sb-menu li a{
+	color: #000000;
+}
+
+.sb-menu hr{
+	margin-top: 13px;
+	margin-bottom: 13px;
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#nav_icon{
+	margin-top: 20px;
+	text-align: center;
+}
+
+#nav_icon img{
+	width: 32px;
+	height: 32px;
+}
+
+
+
+/*サイドメニュー設定*/
+
+#sidefix{
+	width: 220px;
+	height: 100%;
+
+}
+
+#side h1{
+	height: 55px;
+	margin:15px auto 15px 5px;
+	position: fixed;
+}
+
+#toplogo{
+	width: 200px;
+	height: 90px;
+	position: fixed;
+	margin:25px auto 15px 15px;
+}
+#toplogo img{
+	width: 200px;
+	height: 90px;
+}
+
+#icon{
+	position: fixed;
+	margin-top: 130px;
+	padding-left: 18px;	
+}
+
+#icon img{
+	width: 32px;
+	height: 32px;
+}
+
+#icon ul{
+	margin:0 auto 0 0;
+	padding:0 0 0 0;
+}
+
+#icon li{
+	float:left;
+	list-style-type: none;
+}
+
+#menu {
+	clear: both;
+	position: fixed;
+	margin-top: 170px;
+	margin-left: 15px;
+}
+
+#menu ul{
+	margin:0 auto 0 0;
+	padding:0 0 0 10px;
+	height: 30px;
+}
+
+
+
+#menu li{
+	height:30px;
+	list-style-type: none;
+	font-family: 'm_impact';
+	font-size: 17px;
+	letter-spacing: 0.1em;
+
+}
+#menu li a{
+	color:#8d8d8d;
+}
+#menu li a:hover{
+	color:#000000;
+}
+
+#menu_sab{
+	margin:0 0 0 0;
+}
+
+
+#menu_sab dt{
+	display: block;
+	height:30px;
+	line-height: 25px;
+	margin:0 0 0 0;
+	cursor:pointer;
+}
+
+#menu_sab dd{
+	display: none;
+	height:90px;
+	line-height: 25px;
+	margin:0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#menu_sab dd li{
+	height:30px;
+	line-height: 30px;
+	margin:0 0 0 0;
+	padding: 0 0 0 0;
+}
+	
+
+/*コンテンツ設定*/
+
+
+/*info*/
+
+#info {
+	width:700px;
+	margin:auto;
+	padding:auto;
+}
+
+#info_facebook{
+	width: 100%;
+}
+
+/*#info_facebook div{
+	margin:auto auto auto 180px;
+	
+}*/
+
+
+/*biography*/
+
+#biography{
+	
+	display: table;
+	margin:auto;
+	text-align: center;
+}
+
+#biography_left{
+
+	display: table-cell;
+	width: 430px;
+	text-align: left;
+}
+
+#biography_right{
+	display: table-cell;
+	width: 480px;
+	vertical-align: top;
+	text-align: left;
+	font-size: 13px;
+}
+
+#sp_biography_right{
+	display: none;
+}
+
+
+/*photo*/
+
+#container{
+	margin:auto;
+	width: 95%;
+	padding: auto;
+	text-align: center;
+}
+
+.item {
+    width: 25%;
+    float: left;
+ }
+
+ .item img{
+ 	width: 98%;
+ 	
+ }
+
+/*works*/
+.works_table{
+	display: table;
+	margin: auto auto 50px auto;
+	width: 780px;
+	height: 360px
+}
+
+.works_img{
+	display: table-cell;
+	width: 350px;
+	text-align:center;
+}
+
+.works_text{
+	display: table-cell;
+	vertical-align: top;
+	padding: 30px;
+	font-size: 13px;
+}
+
+/*movie*/
+
+.movie_table{
+	display: table;
+	width: 900px;
+	height: 360px;
+	text-align: center;
+	margin: auto auto 50px auto;
+	
+}
+
+.movie_table_vimeo{
+	display: table;
+	width: 900px;
+	height: 310px;
+	text-align: center;
+	margin: auto auto 50px auto;
+	
+}
+
+.movie_img{
+	display: table-cell;
+	width:480px;
+	height: 360px;
+}
+
+.movie_img img {
+	width: 480px;
+	height: 360px;
+}
+
+.movie_img_vimeo{
+	display: table-cell;
+	width:480px;
+	height: 310px;
+	
+}
+
+.movie_img_vimeo img {
+	width: 480px;
+	height: 310px;
+	margin:auto 0 auto 0;
+}
+
+.movie_text{
+	display: table-cell;
+	vertical-align: top;
+	text-align: left;
+	padding: 50px;
+	font-size: 13px;
+}
+
+.movie_text_long{
+	display: table-cell;
+	vertical-align: top;
+	text-align: left;
+	padding: 5px 50px;
+	font-size: 13px;
+}
+
+
+
+.movie_kanren{
+	display: table;
+	width: 900px;
+	height: 40px;
+	text-align: left;
+	margin: 80px auto 10px auto;
+	font-size: 20px;
+}
+
+.movie_kanrentext{
+	display: table-cell;
+	width:480px;
+}
+
+.movie_kanrentext2{
+	display: table-cell;
+	vertical-align: top;
+	text-align: left;	
+}
+
+/*contact*/
+
+#contact{
+	width: 550px;
+	margin: auto;
+	padding-top: 50px;
+}
+
+#contact_top{
+	width: 550px;
+	height: 70px;
+	margin:auto;
+	text-align: center;
+	font-size: 25px;
+	
+}
+
+
+#formWrap {
+	width:550px;
+	margin:0 auto;
+	color:#555;
+	line-height:120%;
+	font-size:90%;
+}
+table.formTable{
+	width:100%;
+	margin:0 auto;
+	border-collapse:collapse;
+}
+table.formTable td,table.formTable th{
+	border:1px solid #ccc;
+	padding:10px;
+}
+table.formTable th{
+	width:35%;
+	font-weight:normal;
+	vertical-align: middle;
+	text-align:center;
+	font-size: 13px;
+}
+
+#contact_btn{
+	padding-top: 30px;
+	margin: auto;
+	
+}
+
+.send_btn{
+	background: #dcdcdc;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	color: #111;
+	width: 100px;
+	padding: 10px 0;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+p.error_messe{
+	margin:5px 0;
+	color:red;
+}
+
+input[type=text] {
+		height: 20px;
+		width: 300px;
+	}
+
+textarea {
+		
+		width: 300px;
+	}
+.contact_kakunin{
+	width:550px;
+	padding-top: 150px;
+	text-align: center;
+	margin: auto;
+}
+
+
+.contact_finish {
+		width: 300px;
+		padding-top: 200px;
+		text-align: center;
+		margin: auto;
+	}
+
+/* ========================================
+ スマホ CSS
+=========================================== */
+/*表示の分岐*/
+@media (min-width: 960px) {
+    #m_nav{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 959px) {
+    
+    #wrapper{
+    	width: 100%;
+    	overflow: hidden;
+    }
+
+	#sb-site{
+		width: 100%;
+		margin: auto;
+	}
+
+    #side{
+    	display: none;
+     }
+    
+    #contens{
+    	display: block;
+     	width: 100%;
+     	height: 100%;
+     	padding-top:160px;
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+		
+     }
+     
+	/*info*/
+
+	#info {
+		width:498px;
+		margin:auto;
+		padding:auto;
+	}
+
+	#info_facebook{
+		width: 100%;
+		margin: auto;
+	}
+
+	/*biography*/
+
+	#biography{
+		
+		display: block;
+		margin:auto;
+	}
+
+	#biography_left{
+
+		display: block;
+		width: 430px;
+		margin: auto;
+	}
+
+	#biography_right{
+		display: block;
+		width: 480px;
+		margin: auto;
+		font-size: 13px;
+	}
+
+	/*photo*/
+
+	#container{
+		margin:auto;
+		width: 100%;
+	}
+
+	.item {
+	    width: 33%;
+	    float: left;
+
+	}
+
+	.item img{
+	    width: 98%;
+	    
+	}
+
+
+	/*works*/
+	.works_table{
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: auto auto 50px auto;
+	
+	}
+
+	.works_img{
+		display: block;
+		width:350px;
+		height: 100%;
+		margin: 0 auto;
+	}
+
+
+	.works_img img{
+		width: 100%;
+		height: 100%;
+		
+	}
+
+	.works_text{
+		display: block;
+		width: 350px;
+		text-align: center;
+		margin: auto;
+		padding: 20px 0 50px 0;
+		font-size: 13px;
+	}
+	
+
+	/*movie*/
+	.movie_table{
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: auto auto 50px auto;
+	
+	}
+
+	.movie_img{
+		display: block;
+		width:480px;
+		height: 360px;
+		margin: 0 auto;
+	}
+
+	.movie_img img{
+		width: 100%;
+		height: 100%;
+		
+	}
+
+	.movie_text{
+		display: block;
+		width: 480px;
+		text-align: center;
+		margin: auto;
+		padding: 50px;
+		font-size: 13px;
+	}	
+
+	.movie_kanren{
+	
+		width: 480px;
+		height: 40px;
+		text-align: center;
+		margin: 80px auto 30px auto;
+		font-size: 20px;
+	}
+
+	/*contact*/
+
+	#contact{
+		width: 550px;
+		margin: auto;
+		padding-top: 50px;
+	}
+
+	#contact_top{
+		width: 550px;
+		height: 70px;
+		margin:auto;
+		text-align: center;
+		font-size: 25px;
+		
+	}
+
+
+	#formWrap {
+		width:550px;
+		margin:0 auto;
+		color:#555;
+		line-height:120%;
+		font-size:90%;
+	}
+	table.formTable{
+		width:100%;
+		margin:0 auto;
+		border-collapse:collapse;
+	}
+	table.formTable td,table.formTable th{
+		border:1px solid #ccc;
+		padding:10px;
+	}
+	table.formTable th{
+		width:35%;
+		font-weight:normal;
+		vertical-align: middle;
+		text-align:center;
+		font-size: 13px;
+	}
+
+	#contact_btn{
+		padding-top: 30px;
+		margin: auto;
+		
+	}
+
+	.send_btn{
+		background: #dcdcdc;
+		border: 1px solid #DDD;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		color: #111;
+		width: 100px;
+		padding: 10px 0;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+
+	input[type=text] {
+		height: 20px;
+		width: 300px;
+	}
+
+	textarea {
+		
+		width: 300px;
+	}
+
+	.contact_kakunin{
+	width:550px;
+	padding-top: 150px;
+	text-align: center;
+	margin: auto;
+	}
+
+
+
+	.contact_finish {
+		width: 300px;
+		padding-top: 200px;
+		text-align: center;
+		margin: auto;
+	}
+
+
+     #mobile {
+        display: block;
+    }
+    
+	.head-nav{
+		display:none;	
+	}
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    #wrapper{
+    	width: 100%;
+    	overflow: hidden;
+    }
+
+	#sb-site{
+		width: 100%;
+		margin: auto;
+	}
+
+    #side{
+    	display: none;
+     }
+    
+    #contens{
+    	display: block;
+     	width: 100%;
+     	height: 100%;
+     	padding-top:130px;
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+		
+     }
+
+	/*info*/
+
+	#info {
+		width:320px;
+		margin:auto;
+		padding:auto;
+	}
+
+	#info_facebook{
+		width: 95%;
+		margin: auto;
+	}
+
+	/*biography*/
+
+	#biography{
+		
+		display: block;
+		width: 320px;
+		margin:auto;
+
+	}
+
+	#biography_left{
+
+		display: block;
+		width: 95%;
+		margin: auto;
+	}
+
+	#biography_left img{
+
+		width: 100%;
+		height: 100%;
+		margin: auto;
+	}
+
+	#biography_right{
+		display: none;
+		
+	}
+
+	#sp_biography_right{
+		display: block;
+		width: 90%;
+		margin: auto;
+		font-size: 13px;
+		text-align: left;
+	}
+
+	/*photo*/
+
+	#container{
+		margin:auto;
+		width: 100%;
+	}
+
+	.item {
+	    width: 50%;
+	    float: left;
+
+	}
+
+	.item img{
+	    width: 98%;
+	    
+	}
+
+     /*works*/
+	.works_table{
+		width: 320px;
+		height: auto;
+		margin: auto;
+		display: block;
+	}
+	.works_img {
+		width: 95%;
+		height: auto;
+		margin: auto;
+		display: block;
+	}
+	.works_img img{
+		width: 100%;
+		height: auto;
+	}
+	
+	.works_text{
+		width: 95%;
+		font-size: 13px;
+		display: block;
+		margin: auto;
+		text-align: center;
+		padding: 20px 0 50px 0;
+
+	}
+     
+	/*movie*/
+	.movie_table{
+		width: 320px;
+		height: auto;
+		margin: auto;
+		display: block;
+	}
+	.movie_img {
+		width: 95%;
+		height: auto;
+		margin: auto;
+		display: block;
+	}
+	.movie_img img{
+		width: 100%;
+		height: auto;
+	}
+	
+	.movie_text{
+		width: 95%;
+		vertical-align: top;
+		text-align: center;
+		padding: 20px 2px;
+		margin-bottom: 50px;
+		font-size: 13px;
+		display: block;
+
+	}
+
+	.movie_kanren{
+	
+	width: 320px;
+	height: 40px;
+	text-align: center;
+	margin: 80px auto 30px auto;
+	font-size: 20px;
+	}
+	
+	/*contact*/
+
+	#contact{
+		width: 320px;
+		margin: auto;
+		padding-top: 20px;
+	}
+
+	#contact_top{
+		width: 320px;
+		height: 40px;
+		margin:auto;
+		text-align: center;
+		font-size: 20px;
+		
+	}
+
+
+	#formWrap {
+		width:320px;
+		margin:0 auto;
+		padding-top: 20px;
+		color:#555;
+		line-height:120%;
+		font-size:90%;
+		border:none;
+	}
+	table.formTable{
+		display: block;
+		width:100%;
+		margin:0 auto;
+		border:none;
+	}
+	
+	table.formTable th{
+		display: block;
+		border:　#ffffff;
+		padding:20px 0 0 0;
+		border: none;
+		width:70px;
+		font-weight:normal;
+		vertical-align: middle;
+		text-align:left;
+		font-size: 13px;
+	}
+
+
+
+	table.formTable td{
+		display: block;
+		border:　#ffffff;
+		padding:5px 0 0 0;
+		border: none;
+		font-size: 13px;
+	}
+	
+	
+	
+
+	table th td {
+		border-style: none;
+	}
+
+	#contact_btn{
+		padding-top: 30px;
+		margin: auto;
+		
+	}
+
+	.send_btn{
+		background: #dcdcdc;
+		border: 1px solid #DDD;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		color: #111;
+		width: 100px;
+		padding: 10px 0;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+
+	input[type=text] {
+		height: 20px;
+		width: 300px;
+	}
+
+	textarea {
+		
+		width: 300px;
+		height: 80px;
+
+	}
+
+	.contact_finish {
+		width: 300px;
+		padding-top: 200px;
+		text-align: center;
+		margin: auto;
+	}
+
+}
+

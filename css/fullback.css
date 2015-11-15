@@ -1,0 +1,442 @@
+/* ========================================
+ RESET CSS
+=========================================== */
+/*
+html5doctor.com Reset Stylesheet
+v1.4
+2009-07-27
+Author: Richard Clark - http://richclarkdesign.com
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+     margin:0;
+     padding:0;
+     border:0;
+     outline:0;
+     font-size:100%;
+     vertical-align:baseline;
+     background:transparent;
+}
+body {
+     line-height:1;
+}
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+     display:block;
+}
+
+ul {
+     list-style:none;
+}
+
+blockquote, q {
+     quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+     content:'';
+     content:none;
+}
+
+a {
+     margin:0;
+     padding:0;
+     border:0;
+     font-size:100%;
+     vertical-align:baseline;
+     background:transparent;
+}
+
+ins {
+     background-color:#ff9;
+     color:#000;
+     text-decoration:none;
+}
+
+mark {
+     background-color:#ff9;
+     color:#000;
+     font-style:italic;
+     font-weight:bold;
+}
+
+del {
+     text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+     border-bottom:1px dotted #000;
+     cursor:help;
+}
+
+table {
+     border-collapse:collapse;
+     border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+     vertical-align:middle;
+}
+
+
+/* ========================================
+ 基本 CSS
+=========================================== */
+
+/*基本設定*/
+
+@font-face {
+  font-family: 'ipaexm';
+  /*src: url(hannari.eot);*/
+  src: url(ipaexm.woff) format('woff');
+}
+
+
+body{
+	font-family: 'ipaexm';
+	line-height: 115%;
+}
+
+
+img{
+	border-style:none;
+}
+
+#wrapper{
+	width: 100%;
+	overflow: hidden;
+	
+}
+
+#sb-site{
+	width: 100%;
+	display:table;
+	overflow: hidden;
+	background-color: rgba(255,255,255,1);/*メニューの残像消すために白バックにしている*/
+	
+}
+
+
+#side{
+	width:220px;
+	height: 100%;
+	display: table-cell;
+	table-layout: fixed;
+	vertical-align: top;
+}
+
+#contens{
+	width: 85%;
+	min-width: 450px;
+	height: 100%;
+	display: table-cell;
+	padding-top:100px;
+	margin: auto;
+	overflow: hidden;
+}
+
+/*サイド設定*/
+
+#sidefix{
+	width: 210px;
+	height: 100%;
+}
+
+#toplogo{
+	width: 200px;
+	height: 90px;
+	position: fixed;
+	margin:15px auto 15px 5px;
+}
+#toplogo img{
+	width: 200px;
+	height: 90px;
+}
+
+#icon{
+	position: fixed;
+	margin-top: 120px;
+	padding-left: 8px;	
+}
+
+#icon ul{
+	margin:0 auto 0 0;
+	padding:0 0 0 0;
+}
+
+#icon li{
+	float:left;
+	list-style-type: none;
+}
+
+#icon img{
+	width: 30px;
+	height:30px;
+}
+
+#menu {
+	clear: both;
+	position: fixed;
+	margin-top: 160px;
+	margin-left: 5px;
+}
+
+#menu ul{
+	margin:0 auto 0 0;
+	padding:0 0 0 10px;
+	height: 30px;
+}
+
+#menu li{
+	height:30px;
+	list-style-type: none;
+
+}
+
+#menu_sab{
+	margin:0 0 0 0;
+}
+
+
+#menu_sab dt{
+	display: block;
+	height:30px;
+	line-height: 25px;
+	margin:0 0 0 0;
+	cursor:pointer;
+}
+
+#menu_sab dd{
+	display: none;
+	height:90px;
+	line-height: 25px;
+	margin:0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#menu_sab dd li{
+	height:30px;
+	line-height: 30px;
+	margin:0 0 0 0;
+	padding: 0 0 0 0;
+}
+	
+
+/*コンテンツ設定*/
+
+
+/*info*/
+
+#info {
+	width:700px;
+	margin:auto;
+	padding:auto;
+}
+
+/*#info_facebook div{
+	margin:auto auto auto 180px;
+	
+}*/
+
+
+/*biography*/
+
+#biography{
+	
+	display: table;
+	margin:auto;
+	text-align: center;
+}
+
+#biography_left{
+
+	display: table-cell;
+	width: 430px;
+	text-align: left;
+}
+
+#biography_right{
+	display: table-cell;
+	width: 480px;
+	vertical-align: top;
+	text-align: left;
+	font-size: 13px;
+}
+
+
+/*photo*/
+
+#main {
+  height:100%; 
+  margin: auto;
+  position: relative;
+}
+
+
+#tiles {
+  list-style-type: none;
+  position: relative;
+  margin: auto;
+  padding: 0;
+}
+
+
+
+#container{
+	margin:auto;
+	width: 90%;
+	padding: auto;
+	text-align: center;
+}
+
+.item {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.item img{
+    width: 99%;
+    
+    
+}
+
+/*works*/
+.works_table{
+	display: table;
+	margin: auto auto 50px auto;
+	width: 780px;
+	height: 360px
+}
+
+.works_img{
+	display: table-cell;
+	width: 350px;
+	text-align:center;
+}
+
+.works_text{
+	display: table-cell;
+	vertical-align: top;
+	padding: 30px;
+	font-size: 13px;
+}
+
+/*movie*/
+
+.movie_table{
+	display: table;
+	width: 900px;
+	height: 360px;
+	text-align: center;
+	margin: auto auto 50px auto;
+	
+}
+
+.movie_table_vimeo{
+	display: table;
+	width: 900px;
+	height: 310px;
+	text-align: center;
+	margin: auto auto 50px auto;
+	
+}
+
+.movie_img{
+	display: table-cell;
+	width:480px;
+	height: 360px;
+}
+
+.movie_img img {
+	width: 480px;
+	height: 360px;
+}
+
+.movie_img_vimeo{
+	display: table-cell;
+	width:480px;
+	height: 310px;
+	
+}
+
+.movie_img_vimeo img {
+	width: 480px;
+	height: 310px;
+	margin:auto 0 auto 0;
+}
+
+.movie_text{
+	display: table-cell;
+	vertical-align: top;
+	text-align: left;
+	padding: 50px;
+	font-size: 13px;
+}
+
+.movie_text_long{
+	display: table-cell;
+	vertical-align: top;
+	text-align: left;
+	padding: 5px 50px;
+	font-size: 13px;
+}
+
+
+
+.movie_kanren{
+	display: table;
+	width: 900px;
+	height: 40px;
+	text-align: left;
+	margin: 80px auto 10px auto;
+	font-size: 20px;
+}
+
+.movie_kanrentext{
+	display: table-cell;
+	width:480px;
+}
+
+.movie_kanrentext2{
+	display: table-cell;
+	vertical-align: top;
+	text-align: left;	
+}
+
+/*contact*/
+
+#contact{
+	width: 600px;
+	margin:auto auto auto 20%;
+	padding-top: 100px;
+}
+
+#contact_text{
+	width: 600px;
+	text-align: center;
+}
+
+
